@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font: 100% "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; }
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px; }
+
+.lead {
+  font-size: 1.2em; }
+
+#app > div {
+  margin: 0 10px; }
+#app button {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em; }
+#app button:hover {
+  background-color: #919191;
+  border-color: #919191; }
+#app form {
+  display: flex;
+  flex-direction: column; }
+  #app form input, #app form select {
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 5px 0 20px; }
+    #app form input:focus, #app form select:focus {
+      border-bottom-color: dodgerblue; }
+  #app form input {
+    border-bottom: 3px solid #f7f7f7; }
+  #app form select {
+    border-bottom: 3px solid transparent; }
+#app .action-span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+#app #accounts {
+  padding: 10px; }
+
+@media only screen and (min-width: 800px) {
+  /* #app {
+    display: grid;
+    grid-template-columns: 33.33% auto; }  */
+  }
+
+/*# sourceMappingURL=main.css.map */
