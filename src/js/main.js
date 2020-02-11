@@ -37,9 +37,8 @@ function addFirstIncome() {
 
   instructions.innerHTML =  `<p class="lead">Good to meet you, ${name}!</p>` +
                             '<p>How many streams of income do you have?</p>'
-  app.innerHTML = '<form>' +
+  app.innerHTML = '<form id="incomeAdder">' +
                     '<input id="numIncomeStreams" type="number" placeholder="0" min="0" step="1" />' +
-                    '<button type="button" onclick="updateIncome(addExpenses)">Next</button>' +
                   '</form>' +
                   '<div id="incomeDetails"></div>'
 
@@ -75,6 +74,7 @@ function addFirstIncome() {
                                     `<input id="incomeAmount${i}" type="number" placeholder="2123.45" min="0" step="0.01" />` +
                                   '</form>'
     }
+    document.getElementById('incomeAdder').innerHTML += '<button type="button" onclick="updateIncome(addExpenses)">Next</button>'
   })
 }
 
